@@ -1,0 +1,64 @@
+header {
+    
+    position: relative;
+    white-space: nowrap;
+
+    .header-text {
+        color: white;
+        position: absolute;
+        bottom: 26%;
+        right: 27%;
+        left: 25%;
+        font-size: 5vw;
+        text-align: center;
+    }
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color:  	#cbcbcb;
+    padding: 15px 0px 15px 0px;
+    a { 
+        margin: 0 115px;
+        font-size: x-large;
+        color: #000000;
+    }
+}
+
+
+.center_form_submission {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #cbcbcb;
+    color: black;
+    text-align: right;
+    padding: 15px 0px 15px 0px;
+}

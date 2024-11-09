@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resturants</title>
+        <link rel="stylesheet" href="restaurants.css"/>
+    </head>
+
+    <body>
+        <header id="header"></header>
+        <nav id="nav_bar_dom"></nav>
+
+        <section>
+            <div class="grid-container">
+                <% for (let restaurant of restaurants) { %>
+                    <div class="grid-item">
+                        <img src="<%= restaurant.photo %>">
+                        <button class="minus" id="delete-<%= restaurant.id %>">-</button>
+                        <p><%=restaurant.name %></p>
+                        <p><%=restaurant.address %></p>
+                        <p><%=restaurant.phone_number %></p>
+                    </div>
+                <% } %>
+                <script src="scripts/restaurantCards.js"></script>
+            </div>
+        </section>
+
+
+        <footer id="footer"></footer>
+        <script src="scripts/header.js"></script>
+    </body>
+
+</html>
